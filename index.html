@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="imgs/logo.svg">
+    <title>Sneakers</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- SWEET ALERT -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="icon" id="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="image">
+                    <img src="imgs/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="links">
+                <div class="icon">
+                    <i class="fa-solid fa-xmark" id="toggle-exit-btn"></i>
+                </div>
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping" id="cart-icon">
+                        <span class="number"></span>
+                    </i>
+                    <div class="cart-box display-toggle">
+                        <h5>Cart</h5>
+                        <div class="details">
+                            <img src="imgs/image-product-1-thumbnail.jpg" alt="" id="cart-img">
+                            <span>
+                                <p id="cart-prod-title">Fall Limited Edition Sneakers</p>
+                                <p><span id="price">Your cart is empty</span><span id="count"></span> <span
+                                        id="total"></span>
+                                </p>
+                            </span>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <div class="checkout-btn">
+                            <span>Checkout</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-image">
+                    <img src="imgs/image-avatar.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="container">
+            <div class="product-show">
+                <div class="preview">
+                    <img class="active" src="imgs/image-product-1.jpg" alt="product-image" data-index="0">
+                    <img src="imgs/image-product-2.jpg" alt="product-image" data-index="1">
+                    <img src="imgs/image-product-3.jpg" alt="product-image" data-index="2">
+                    <img src="imgs/image-product-4.jpg" alt="product-image" data-index="3">
+                </div>
+                <div class="nav-btns next-btn" id="next-btn">
+                    > </div>
+                <div class="nav-btns prev-btn disabled" id="prev-btn">
+                    < </div>
+                        <div class="light-box">
+                            <div class="image active" data-index="0">
+                                <img src="imgs/image-product-1-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="image" data-index="1">
+                                <img src="imgs/image-product-2-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="image" data-index="2">
+                                <img src="imgs/image-product-3-thumbnail.jpg" alt="">
+                            </div>
+                            <div class="image" data-index="3">
+                                <img src="imgs/image-product-4-thumbnail.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+                <div class="details">
+                    <div class="info">
+                        <h5>Sneaker Company</h5>
+                        <h1>Fall Limited Edition Sneakers</h1>
+                        <p>These low-profile sneaker are your perfect casual wear companion. Featuring a durable rubber
+                            outer sole, they'll withstand everything the weather can offer</p>
+                    </div>
+                    <div class="price">
+                        <h2>$<p>125.00</p>
+                        </h2>
+                        <span>50%</span>
+                        <span>$250.00</span>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="count">
+                            <span id="decrease">-</span>
+                            <span id="quantity">0</span>
+                            <span id="increase">+</span>
+                        </div>
+                        <div class="cart-btn">
+                            <i class="fa-cart-shopping fa-solid"></i>
+                            <span>Add to cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="js/sweetalert2.all.min.js"></script> -->
+        <script src="js/sweetalert2.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
