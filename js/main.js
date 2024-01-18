@@ -221,7 +221,6 @@ addToCartBtn.onclick = function () {
     cartBoxPrice.innerHTML = `$${price}.00 * `;
     count.innerHTML = prodQty.innerHTML;
     totalPrice.innerHTML = `$${price * parseInt(count.innerHTML)}.00`;
-    prodQty.innerHTML = 0;
     Swal.fire({
       width: "350px",
       position: "bottom-end",
@@ -230,6 +229,7 @@ addToCartBtn.onclick = function () {
       showConfirmButton: false,
       timer: 1500,
     });
+    prodQty.innerHTML = 0;
   } else {
     Swal.fire({
       width: "400px",
